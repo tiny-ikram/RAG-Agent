@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+langchain
+langchain-community
+langchain-openai
+langchain-groq
+langchain-google-genai
+langchain-chroma
+unstructured[all-docs]
+chromadb
+pillow
+lxml
+python-dotenv
