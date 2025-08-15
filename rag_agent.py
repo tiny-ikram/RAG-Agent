@@ -16,6 +16,8 @@ from langchain_core.messages import HumanMessage
 from unstructured.partition.pdf import partition_pdf
 
 # ----------- CONFIG -----------
+os.environ["GOOGLE_API_KEY"] = "AIzaSyDYtytv_MjBdi1rvas1UQPAQj0WYmTAgWc"
+os.environ["GROQ_API_KEY"] = "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"
 PERSIST_DIR = "./data/chroma_store"
 id_key = "doc_id"
 
