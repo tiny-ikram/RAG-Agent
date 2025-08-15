@@ -1,0 +1,3 @@
+# Ignore environment files and configs with secrets
+keys.env
+config.py
