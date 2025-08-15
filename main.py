@@ -1,4 +1,4 @@
-from fastapi import FastAPI, UploadFile
+from fastapi import FastAPI, UploadFile, Form  
 import shutil
 from rag_agent import init_retriever, index_pdf, query_agent
 
@@ -17,7 +17,7 @@ async def upload_pdf(file: UploadFile):
     return {"status": "Document indexed", "filename": file.filename}
 
 @app.post("/query")
-async def query_endpoint(question: str):
+async def query_endpoint(question: str = Form(...)):  # Change this line
     result = query_agent(question)
     return {
         "question": question,
